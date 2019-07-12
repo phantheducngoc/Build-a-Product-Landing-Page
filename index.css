@@ -1,0 +1,199 @@
+* {
+    
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    padding:0;
+    margin:0;
+    position: sticky;
+    background: whitesmoke;
+    top:0;
+}
+#top-header{
+    display:block;
+    width: 100%;
+    height:50px;
+    background-color:black;
+    box-shadow: 4px 4px 10px;
+}
+#bottom-header{
+    display:flex;
+    flex-direction: row;
+    padding-top:20px;
+    padding-bottom:10px;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width:650px){
+    #bottom-header, ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-wrap:wrap;
+    }
+}
+#header-img{
+    max-width:300px; 
+}
+#nav-bar{
+    width: 40%;
+}
+ul{
+    display:flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+.nav-link{
+    text-decoration: none;
+    color:black;
+    display:inline-block;
+}
+form label{
+    margin:auto;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+form > input{
+    display: block;
+    margin:auto;
+}
+form > input[type="email"]{
+    min-width: 20%;
+    height: 25px;
+    padding:5px;
+    margin-bottom: 20px;
+}
+form > input[type="submit"]{
+    background-color:rgb(255,200,0);
+    font-weight: 700;
+    font-size: 17px;
+    text-transform:uppercase;
+    border:0;
+    padding:5px 20px;
+}
+#submit:hover{
+    animation-name: submit;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes submit{
+    100%{background-color:rgb(255,130,0);}
+}
+#features{
+    margin-top:30px;
+}
+.grid{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    flex:1;
+}
+.icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    color:darkorange;
+}
+.desc{
+    text-align: left;
+    max-width: 80vw;
+}
+.desc h2{
+    font-weight: 500;
+}
+#how-it-works{
+    display:flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+#pricing{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:60px;
+}
+.price{
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid black;
+    margin:0 10px;
+    max-width: 300px;
+    text-align: center;
+}
+.price .level{
+    background-color:#ddd;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width:100%;
+}
+#pricing h2{
+    font-weight: bold;
+}
+#pricing li{
+    margin-bottom:10px;
+    display:list-item;
+}
+@media (max-width:650px){
+    #pricing{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .price{
+        width:500px;
+        text-align: center;
+        margin-bottom:20px;
+    }
+}
+#pricing button{
+    background-color:rgb(255,200,0);
+    border:0;
+    padding:10px 20px;
+    cursor: pointer;
+    margin-bottom:20px;
+}
+.price li{
+    list-style-type: none;
+}
+footer{
+    display: block;
+    height: 60px;
+    background-color:#ddd;
+    width: 80%;
+    margin:auto;
+    margin-top:40px;
+    padding-top:10px;
+    padding-right:20px;
+    box-sizing: border-box;
+    
+}
+.footer-infor{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+.footer-infor div{
+    float:right;
+}
+.footer-infor div a {
+    text-decoration: none;
+    font-weight: bold;
+}
